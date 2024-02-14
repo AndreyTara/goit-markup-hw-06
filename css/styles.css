@@ -565,7 +565,7 @@ nav {
 }
 
 .team-list {
-  padding-top: 72px;
+  margin-top: 72px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -583,8 +583,8 @@ nav {
 }
 
 .team-item-convert {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .team-subtitle {
@@ -593,12 +593,12 @@ nav {
 }
 
 .team-text {
-  padding-top: 8px;
+  margin-top: 8px;
   text-align: center;
 }
 
 .team-box-list {
-  padding-top: 8px;
+  margin-top: 8px;
   display: flex;
   align-items: center;
   justify-content: center;

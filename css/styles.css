@@ -432,7 +432,6 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   margin: 0 auto;
 }
 @media screen and (min-device-pixel-ratio: 2),
@@ -455,8 +454,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding-top: 188px;
-  padding-bottom: 188px; */
   padding: 72px 52px;
 }
 
@@ -470,9 +467,9 @@ nav {
   color: #ffffff;
   max-width: 496px;
   width: 100%;
-  padding-bottom: 72px;
   text-transform: capitalize;
   max-width: 216px;
+  margin-bottom: 72px;
 }
 
 .hero-button {
@@ -1206,16 +1203,21 @@ nav {
       margin: 0 auto;
     }
   }
-  .hero-container {
+  .hero {
     padding-top: 112px;
     padding-bottom: 112px;
   }
+
+  .hero-container {
+    padding: unset;
+  }
+
   .hero-title {
     text-transform: unset;
     font-size: 56px;
     line-height: 1.07;
-    padding-bottom: 36px;
     min-width: 496px;
+    margin-bottom: 36px;
   }
   .skills-list {
     flex-direction: row;
@@ -1312,6 +1314,8 @@ nav {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-office-desc-1x.jpg);
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
@@ -1328,13 +1332,10 @@ nav {
       margin: 0 auto;
     }
   }
-  .hero-container {
-    padding-top: 188px;
-    padding-bottom: 188px;
-  }
+
   .hero-title {
-    padding-bottom: 48px;
     letter-spacing: 1.12px;
+    margin-bottom: 48px;
   }
 
   .skills-list {

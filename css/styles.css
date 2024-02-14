@@ -275,6 +275,11 @@ nav {
   flex-direction: column;
   justify-content: space-between;
 }
+.header-modal-menu.modal {
+  max-width: 100%;
+  --mod-height: calc(100%);
+  --mod-width: calc(100%);
+}
 .header-menu-close-btn {
   position: absolute;
   top: 24px;
@@ -931,8 +936,8 @@ nav {
 }
 .modal {
   position: absolute;
-  --mod-height: calc(100%);
-  --mod-width: calc(100%);
+  --mod-height: calc(650px);
+  --mod-width: calc(100% - 32px);
   top: max(0px, calc(50% - var(--mod-height) / 2));
   bottom: max(0px, calc(50% - var(--mod-height) / 2));
   left: max(0px, calc(50% - var(--mod-width) / 2));
@@ -947,7 +952,6 @@ nav {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* padding: 72px 24px 24px 24px; */
   padding: 72px 16px 24px 16px;
   overflow: auto;
 }
@@ -1155,6 +1159,7 @@ nav {
     /* min-width: 737px; */
     max-width: 768px;
   }
+
   .header-menu-logo {
     margin-right: 120px;
   }
@@ -1184,7 +1189,9 @@ nav {
   .header-modal-btn {
     display: none;
   }
-
+  .header-modal {
+    display: none;
+  }
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),

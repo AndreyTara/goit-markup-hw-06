@@ -1156,7 +1156,7 @@ nav {
     max-width: 768px;
   }
   .header-menu-logo {
-    padding-right: 120px;
+    margin-right: 120px;
   }
   .header-container {
     gap: 120px;
@@ -1306,7 +1306,7 @@ nav {
   }
 
   .header-menu-logo {
-    padding-right: 76px;
+    margin-right: 76px;
   }
   .header-address-list {
     gap: 40px;

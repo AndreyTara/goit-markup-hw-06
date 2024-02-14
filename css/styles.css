@@ -545,12 +545,13 @@ nav {
 }
 .skills-subtitle {
   font-size: 36px;
+  font-weight: 700;
   text-align: center;
   text-transform: none;
 }
 
 .skills-text {
-  padding-top: 8px;
+  margin-top: 8px;
   text-align: left;
   text-transform: none;
   font-weight: 500;

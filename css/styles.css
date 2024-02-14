@@ -1255,6 +1255,7 @@ nav {
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 72px 24px;
+    max-width: 530px;
   }
   .footer-content-text {
     max-width: 264px;

@@ -932,8 +932,8 @@ nav {
 }
 .modal {
   position: absolute;
-  --mod-height: calc(640px);
-  --mod-width: calc(100% - 32px);
+  --mod-height: calc(100%);
+  --mod-width: calc(100%);
   top: max(0px, calc(50% - var(--mod-height) / 2));
   bottom: max(0px, calc(50% - var(--mod-height) / 2));
   left: max(0px, calc(50% - var(--mod-width) / 2));

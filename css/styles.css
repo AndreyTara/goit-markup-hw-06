@@ -645,10 +645,10 @@ nav {
 }
 
 .portfolio-list {
-  padding-top: 72px;
+  margin-top: 72px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 48px;
 }
 
 .portfolio-item {
@@ -748,11 +748,12 @@ nav {
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1238,7 +1239,6 @@ nav {
   }
 
   .portfolio-list {
-    padding-top: 72px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
@@ -1344,9 +1344,6 @@ nav {
   }
   .team-list {
     flex-wrap: nowrap;
-  }
-  .portfolio-list {
-    padding-top: 120px;
   }
   .portfolio-item {
     width: calc((100% - 2 * 24px) / 3);

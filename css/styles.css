@@ -480,6 +480,7 @@ nav {
 }
 
 .hero-button {
+  white-space: nowrap;
   display: block;
   min-width: 169px;
   padding: 16px 32px;

@@ -162,8 +162,12 @@ nav {
 }
 
 .header-menu-link {
+  font-size: 16px;
   font-weight: 500;
-  padding: 24px 0;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding-bottom: 24px;
   color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -231,7 +235,6 @@ nav {
 
 .header-address {
   display: none;
-  padding: 24px 0;
 }
 
 .header-address-list {
@@ -431,7 +434,7 @@ nav {
 }
 
 .hero {
-  max-width: 1440px;
+  max-width: 320px;
   width: 100%;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -442,6 +445,7 @@ nav {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  padding: 72px 52px;
 }
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
@@ -458,13 +462,6 @@ nav {
     margin: 0 auto;
   }
 }
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 72px 52px;
-}
 
 .hero-title {
   font-size: 36px;
@@ -478,6 +475,7 @@ nav {
   width: 100%;
   text-transform: capitalize;
   max-width: 216px;
+  margin: 0 auto;
   margin-bottom: 72px;
 }
 
@@ -552,11 +550,17 @@ nav {
 .skills-subtitle {
   font-size: 36px;
   font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: none;
 }
 
 .skills-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-top: 8px;
   text-align: left;
   text-transform: none;
@@ -589,8 +593,8 @@ nav {
 }
 
 .team-item-convert {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-subtitle {
@@ -743,7 +747,6 @@ nav {
 }
 
 .portfolio-subtitle {
-  font-weight: 500;
   text-align: left;
   margin-bottom: 8px;
 }
@@ -784,7 +787,8 @@ nav {
 
 .footer-content-text {
   color: #faf4fd;
-  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
@@ -1163,9 +1167,7 @@ nav {
   .header-menu-logo {
     margin-right: 120px;
   }
-  .header-container {
-    gap: 120px;
-  }
+
   .header-menu {
     display: flex;
     justify-content: space-between;
@@ -1183,7 +1185,7 @@ nav {
   }
   .header-address-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 12px;
   }
   .header-modal-btn {
@@ -1198,6 +1200,10 @@ nav {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-office-tab-1x.jpg);
+    padding: unset;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 768px;
   }
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
@@ -1214,14 +1220,6 @@ nav {
       margin: 0 auto;
     }
   }
-  .hero {
-    padding-top: 112px;
-    padding-bottom: 112px;
-  }
-
-  .hero-container {
-    padding: unset;
-  }
 
   .hero-title {
     text-transform: unset;
@@ -1229,6 +1227,9 @@ nav {
     line-height: 1.07;
     min-width: 496px;
     margin-bottom: 36px;
+  }
+  .skills-subtitle {
+    text-align: left;
   }
   .skills-list {
     flex-direction: row;
@@ -1302,23 +1303,33 @@ nav {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1160px) {
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
   }
 
   .container {
-    min-width: 1158px;
+    max-width: 1160px;
   }
 
   .header-menu-logo {
     margin-right: 76px;
   }
+  .header-address {
+    padding-top: unset;
+    padding-bottom: unset;
+  }
   .header-address-list {
+    flex-direction: unset;
     gap: 40px;
   }
-
+  .header-address-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1327,7 +1338,9 @@ nav {
       url(../images/hero-office-desc-1x.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
   }
+
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
@@ -1352,6 +1365,13 @@ nav {
   .skills-list {
     gap: 24px;
   }
+  .skills-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+    text-transform: none;
+  }
 
   .skills-item {
     width: calc((100% - 3 * 24px) / 4);
@@ -1363,17 +1383,28 @@ nav {
   .team-list {
     flex-wrap: nowrap;
   }
+  .skills-subtitle {
+    font-weight: 500;
+  }
+  .skills-text {
+    font-weight: 400;
+  }
   .portfolio-item {
     width: calc((100% - 2 * 24px) / 3);
   }
-  .footer-content {
-    padding-right: 40px;
-  }
   .footer-container {
+    gap: unset;
+    flex-wrap: unset;
     align-items: baseline;
-    column-gap: 80px;
-    flex-wrap: wrap;
+    justify-content: center;
   }
+  .footer-content {
+    margin-right: 120px;
+  }
+  .footer-soc {
+    margin-right: 80px;
+  }
+
   .modal {
     min-width: 408px;
     min-height: 584px;
